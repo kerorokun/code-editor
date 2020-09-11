@@ -22,7 +22,7 @@ Features in this specific build
 * Custom generic dynamic array
 * Batched 2D Graphics Library backend using OpenGL
 
-Features not available in this current build but were available in the final build
+Features not available in this current build but available in the final build
 * Automatic code formatting
 * Themes
 * Slight more expanded evaluation buffer
