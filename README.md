@@ -1,13 +1,14 @@
 # code-editor
 <img src="https://github.com/kerorokun/code-editor/blob/master/images/screenshot.png" width="900" />
 <img src="https://github.com/kerorokun/code-editor/blob/master/images/dracula_screenshot.png" width="900" />
-A code editor I wrote in C/C++ and OpenGL back from March 2018 - July 2018. Unfortunately, I forgot to save the final completed project so this is a snapshot from the most recent saved repo I could find back in June 2, 2018.
+A code editor I wrote in C and OpenGL back from March 2018 - July 2018. Unfortunately, I forgot to save the final completed project so this is a snapshot from the most recent saved repo I could find back in June 2, 2018.
 
 There were a few inspirations for this project:
 1. Make a minimal Emacs (as that was my main editor of choice back then) that used graphics acceleration
 2. Learn more about data structures and C in a non-trivial project
 3. Learn OpenGL
 4. Experiment with a procedural coding style and the associated patterns (as I had only learned OOP in school)
+5. Learn about low level concepts and performance concepts
 
 ## Features
 Features in this specific build
