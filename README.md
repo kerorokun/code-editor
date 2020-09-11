@@ -27,3 +27,4 @@ Features not available in this current build but were available in the final bui
 * Slight more expanded evaluation buffer
 * Expanded multithreading
 * Word search using Trie structure
+* LOTS of bug fixes
