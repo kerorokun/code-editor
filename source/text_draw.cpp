@@ -99,7 +99,7 @@ DrawGapBufferLine(Font *font,
         
         
         //===== Test for end (word wrapping)
-        if (currChar == '\n') {
+        if (currChar == '\n' || currChar == '\r') {
             break;
         }
         

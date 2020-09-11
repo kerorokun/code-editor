@@ -257,7 +257,7 @@ InitEditor()
     WIDTH = 1280;
     HEIGHT = 720;
     
-    window = glfwCreateWindow(WIDTH, HEIGHT, "Word Processor", NULL, NULL);
+    window = glfwCreateWindow(WIDTH, HEIGHT, "Code Editor", NULL, NULL);
     if (!window) {
         glfwTerminate();
         return -1;
