@@ -1,0 +1,139 @@
+REFACTORING:
+   1. Clean up arrays and get rid of linked list
+   2. Clean up util
+   3. Clean up window / panel abstraction
+
+
+/* =====================
+ * TODO Code: 
+ */
+typedef struct {
+    UIPanel *ui;
+    BufferFile *file;
+    char *status_text;
+
+    int cursor_index;
+    int mark_index;
+
+    int saved_row_index;
+    bool lines_synced;
+} Pane;
+
+typedef struct {
+    PanePalette *palette;
+    int start_row_index;
+    Rect pane_rect;
+    Rect status_rect;
+
+    Array *lines_arr;
+    int line_length;
+} UIPane;
+
+typedef struct {
+    vec3 text_color;
+    vec3 background_color;
+    vec3 highlight_color;
+} PanePalette;
+
+typedef struct {
+    Pane *pane;
+    UIPane *pane_ui;
+
+    // Command buffer
+} Emin;
+
+void emin_draw(Emin *emin)
+{
+    /* Draw pane using palette
+     * 1. Update the lines in the UI
+     * 2. Determine the start row
+     * 3. Draw loop (start row -> offscreen)
+     *        a. Check if past viewport
+     *        b. Check if cursor row
+     *  
+     */
+}
+
+void emin_move(Emin *emin)
+{
+    /*
+     * Moves the cursor by calling a pane_place_cursor
+     */
+}
+
+void emin_draw()
+{
+}
+/*
+ * =======================
+ */
+
+
+
+
+TODO STUFF:
+
+Features
+================================
+* Data structures for float_array and int_array
+* Directory
+* Replace
+* Custom keybindings (separate input from actions. Command pattern?)
+* Pack fonts into one texture
+* Autocomplete
+* Mouse
+* Close file, close panel, open more panels
+* Option for auto indent
+* Cancel command
+
+Performance
+================================
+* Don't render unless necessary (Check to see if this is the case)
+* Don't send VBO unless necessary
+* Speed up BufferCalcLines
+
+BufferFile
+================================
+* Convert stacks into C
+* Have BufferCalcLines calculate word wrapping
+
+Panel
+================================
+* Advanced Ctrl movement
+* Rename width / height to endX, endY
+* Make search and replace go back if cancelled
+
+Window
+================================
+* Open and close
+* Detect if file doesn't exist
+* Handle different focuses
+* Scrolling
+
+Text
+================================
+
+Processor
+================================
+
+Buffer
+================================
+* Let it handle UTF-8
+* Handle TODO for BufferSetText
+* Fix BufferGetText
+* BufferFindString
+
+Bugs
+===============================
+
+Cleanup
+================================
+* Change the data types
+* Separate rendering from updating (no updates in render thread unless it's accessing a mutex)
+* Think of renaming (files --> buffer?)
+* Free statement for everything
+* Replace new with malloc
+* Check each malloc
+* Separate update from the render (? Might already be)
+* Test for errors
+* Test for NULL
