@@ -1,7 +1,7 @@
-# code-editor
+# Code Editor
+A code editor I wrote in C and OpenGL back from March 2018 - July 2018. Unfortunately, I forgot to save the final completed project so this is a snapshot from the most recent saved repo I could find back in June 2, 2018.
 <img src="https://github.com/kerorokun/code-editor/blob/master/images/screenshot.png" width="900" />
 <img src="https://github.com/kerorokun/code-editor/blob/master/images/dracula_screenshot.png" width="900" />
-A code editor I wrote in C and OpenGL back from March 2018 - July 2018. Unfortunately, I forgot to save the final completed project so this is a snapshot from the most recent saved repo I could find back in June 2, 2018.
 
 There were a few inspirations for this project:
 1. Make a minimal Emacs (as that was my main editor of choice back then) that used graphics acceleration
@@ -28,4 +28,5 @@ Features not available in this current build but available in the final build
 * Slight more expanded evaluation buffer
 * Expanded multithreading
 * Word search using Trie structure
+* Syntax highlighting for C
 * LOTS of bug fixes
